@@ -1,3 +1,6 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
 intents:
 - greet
 - goodbye
@@ -6,45 +9,32 @@ intents:
 - affirmative
 - negative
 - thankyou
-
-entities:
-- name_bot
-- particular_location
-- district_rusizi
-
+responses:
+  utter_greetings:
+  - text: Greetings
+  - text: Hello
+  - text: Hi there
+  utter_introduction:
+  - text: My name is Mbaza AI I am a Covid based chatbot
+  utter_mytask:
+  - text: I am here to provide you with information on where you can travel in Rwanda
+  utter_goodbye:
+  - text: Good Bye, and Remember to keep to maintain the rules and keep safe
+  utter_noworries:
+  - text: My pleasure
+  utter_response_on_rusizi:
+  - text: Entering or exiting Rusizi is currently not permitted, however you can travel
+      within Rusizi
+  utter_confirm_district:
+  - text: Do you want to travel to Rusizi District?
+  utter_free_to_travel:
+  - text: You are free to travel inside Rwanda expect for the District of Rusizi
 actions:
-- utter_goodbye
-- utter_noworries
 - utter_greetings
 - utter_introduction
 - utter_mytask
+- utter_goodbye
+- utter_noworries
 - utter_response_on_rusizi
 - utter_confirm_district
-- - utter_free_to_travel
-
-templates:
-  utter_greetings:
-  - text: "Hi there"
-  
-  utter_introduction:
-  - text: "My name is Mbaza AI I am a Covid based chatbot"
-  
-  utter_mytask:
-  - text: "I am here to provide you with information on where you can travel in Rwanda"
-  
-  utter_goodbye:
-  - text: "Good Bye, and Remember to keep to maintain the rules and keep safe"
-  
-  utter_noworries:
-  - text: "My pleasure"
-  
-  utter_response_on_rusizi:
-  - text: "Entering or exiting Rusizi is currently not permitted, however you can travel within Rusizi"
-  
-  utter_confirm_district:
-  - text: "Do you want to travel to Rusizi District?"
-  
-  utter_free_to_travel:
-  - text: "You are free to travel inside Rwanda expect for the District of Rusizi"
-  
-  
+- utter_free_to_travel
