@@ -6,8 +6,7 @@ intents:
 - affirmative
 - negative
 - thankyou
-- myth_buster
-- symptoms
+
 
 entities:
 - name_bot
