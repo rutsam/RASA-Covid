@@ -7,7 +7,6 @@ intents:
 - negative
 - thankyou
 
-
 entities:
 - name_bot
 - particular_location
